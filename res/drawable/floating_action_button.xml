@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2006 The Android Open Source Project
+<!--
+     Copyright (C) 2014 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,16 +15,7 @@
      limitations under the License.
 -->
 
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_weight="1.0"
-    android:paddingTop="1dip"
-    android:background="@color/day_past_background_color"
-    android:foregroundGravity="fill_horizontal|top">
-    <ViewSwitcher
-        android:id="@+id/switcher"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-</FrameLayout>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/fab_theme_color_dark">
+    <item android:drawable="@drawable/fab_blue" />
+</ripple>
